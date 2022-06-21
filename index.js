@@ -131,8 +131,9 @@ const genHtml = (manager, engineer, intern) => {
         <main>
             <div class="d-flex justify-content-evenly">
             ${manager}
-            ${engineer}
             ${intern}
+            ${engineer}
+         
               
             </div>
         </main>
@@ -143,7 +144,7 @@ const genHtml = (manager, engineer, intern) => {
 const genMan = (manData) => {
     const manager = new Manager(manData.managerName, manData.managerId, manData.managerEmail, manData.officeNum);
     return `    <div class="card" style="width: 18rem;">
-    <div class="card-header">${manager.getRole()}: ${manager.getName()}</div>
+    <div class="card-header bg-danger">${manager.getRole()}: ${manager.getName()}</div>
     <ul class="list-group list-group-flush">
     <li class="list-group-item">Employee ID: ${manager.getId()}</li>
     <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
@@ -159,7 +160,7 @@ const genEng = (teamArray) => {
         if (teamate.team === 'Engineer') {
             let engineer = new Engineer(teamate.engineerName, teamate.engineerId, teamate.engineerEmail, teamate.git)
             engineers += `    <div class="card" style="width: 18rem;">
-            <div class="card-header">${engineer.getRole()}: ${engineer.getName()} </div>
+            <div class="card-header bg-info">${engineer.getRole()}: ${engineer.getName()} </div>
             <ul class="list-group list-group-flush">
             <li class="list-group-item">Employee ID: ${engineer.getId()}</li>
             <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</li>
@@ -178,7 +179,7 @@ const genInt = (teamArray) => {
         if (teamate.team === 'Intern') {
             let intern = new Intern(teamate.internName, teamate.internId, teamate.internEmail, teamate.school)
             interns += `    <div class="card" style="width: 18rem;">
-            <div class="card-header">${intern.getRole()}: ${intern.getName()} </div>
+            <div class="card-header bg-warning">${intern.getRole()}: ${intern.getName()} </div>
             <ul class="list-group list-group-flush">
             <li class="list-group-item">Employee ID: ${intern.getId()}</li>
             <li class="list-group-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</li>
