@@ -1,4 +1,4 @@
-const Employee = require("./lib/Employee");
+const Employee = require("../lib/Employee");
 
 describe('Employee', () => {
   it('should create a new instance of Employee as an object', () => {
@@ -49,7 +49,7 @@ describe('getEmail Function', () => {
 describe('getRole Function', () => {
   it('should get the role of the desired instance of employee', () => {
     const role = 'Employee';
-    const newInsOfEmp = new Employee('Ben', 32, newEmail);
+    const newInsOfEmp = new Employee('Ben', 32, 'benjas@gmail.com');
     expect(newInsOfEmp.getRole()).toEqual(role);
   });
 });
