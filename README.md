@@ -15,7 +15,7 @@
 - Ben Ashworth
 
 ## Resources
-[Repo Link](https://github.com/bashworthj/ReadME-Gen) 
+[Repo Link](https://github.com/bashworthj/Team-Profile) 
 
-[Blurry Video Link](https://drive.google.com/file/d/1fwTEPdVrOprR9s3UCKSAs6LSYZ9LSfut/view)
+[ Video Link](https://drive.google.com/file/d/1sTY-lkBDUmqXRSBaXcxWiw9F3diYmWJG/view)
  
