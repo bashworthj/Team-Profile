@@ -3,16 +3,16 @@ const Engineer = require('../lib/Engineer')
 
 describe('Engineer', () => {
   it('should accept github as an argument and set its github property accordingly', () => {
-    const newGit = "bashworthj"
-    const newInsOfEng = new Engineer(newGit);
+    const newGit = "bashworthj";
+    const newInsOfEng = new Engineer('Ben', 32, 'benjas@gmail.com', newGit);
     expect(newInsOfEng.github).toEqual(newGit);
   });
 });
 
 describe('getGithub Function', () => {
   it('should get the github username of the desired instance of Engineer', () => {
-    const newGit = "bashworthj"
-    const newInsOfEng = new Engineer(newGit);
+    const newGit = "bashworthj";
+    const newInsOfEng = new Engineer('Ben', 32, 'benjas@gmail.com', newGit);
     expect(newInsOfEng.getGithub()).toEqual(newGit);
   });
 });

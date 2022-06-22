@@ -4,7 +4,7 @@ const Manager = require('../lib/Manager')
 describe('Manager', () => {
   it('should accept office number as an argument and set its office number property accordingly', () => {
     const newOfficeNum = 903;
-    const newInsOfMan = new Manager(newOfficeNum);
+    const newInsOfMan = new Manager('Ben', 32, 'benjas@gmail.com', newOfficeNum);
     expect(newInsOfMan.officeNumber).toEqual(newOfficeNum);
   });
 });

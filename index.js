@@ -129,21 +129,20 @@ const genHtml = (manager, engineer, intern) => {
             <h1 class="col-12 p-2 d-none d-xs-none d-md-block">My Team</h1>
         </header>
         <main>
-            <div class="d-flex justify-content-evenly">
+            <div class="d-flex justify-content-evenly mt-4">
             ${manager}
-            ${intern}
             ${engineer}
+            ${intern}
          
               
             </div>
         </main>
-    </body>
     </html>`;
 }
 
 const genMan = (manData) => {
     const manager = new Manager(manData.managerName, manData.managerId, manData.managerEmail, manData.officeNum);
-    return `    <div class="card" style="width: 18rem;">
+    return `    <div class="card mt-4" style="width: 18rem;">
     <div class="card-header bg-danger">${manager.getRole()}: ${manager.getName()}</div>
     <ul class="list-group list-group-flush">
     <li class="list-group-item">Employee ID: ${manager.getId()}</li>
@@ -159,7 +158,7 @@ const genEng = (teamArray) => {
     for (teamate of teamArray) {
         if (teamate.team === 'Engineer') {
             let engineer = new Engineer(teamate.engineerName, teamate.engineerId, teamate.engineerEmail, teamate.git)
-            engineers += `    <div class="card" style="width: 18rem;">
+            engineers += `    <div class="card mt-4" style="width: 18rem;">
             <div class="card-header bg-info">${engineer.getRole()}: ${engineer.getName()} </div>
             <ul class="list-group list-group-flush">
             <li class="list-group-item">Employee ID: ${engineer.getId()}</li>
@@ -178,7 +177,7 @@ const genInt = (teamArray) => {
     for (teamate of teamArray) {
         if (teamate.team === 'Intern') {
             let intern = new Intern(teamate.internName, teamate.internId, teamate.internEmail, teamate.school)
-            interns += `    <div class="card" style="width: 18rem;">
+            interns += `    <div class="card mt-4" style="width: 18rem;">
             <div class="card-header bg-warning">${intern.getRole()}: ${intern.getName()} </div>
             <ul class="list-group list-group-flush">
             <li class="list-group-item">Employee ID: ${intern.getId()}</li>

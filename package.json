@@ -3,6 +3,9 @@
     "fs": "^0.0.1-security",
     "inquirer": "^8.2.4"
   },
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
     "jest": "^28.1.1"
   }

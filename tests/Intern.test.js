@@ -4,7 +4,7 @@ const Intern = require('../lib/Intern')
 describe('Intern', () => {
   it('should accept school as an argument and set its school property accordingly', () => {
     const newSchool = "UNCC";
-    const newInsOfInt = new Intern(newSchool);
+    const newInsOfInt = new Intern('Ben', 32, 'benjas@gmail.com', newSchool);
     expect(newInsOfInt.school).toEqual(newSchool);
   });
 });
@@ -12,8 +12,8 @@ describe('Intern', () => {
 describe('getSchool Function', () => {
   it('should get the school of the desired instance of Intern', () => {
     const newSchool = "UNCC";
-    const newInsOfInt = new Intern(newSchool);
-    expect(newInsOfInt.getSchool).toEqual(newSchool);
+    const newInsOfInt = new Intern('Ben', 32, 'benjas@gmail.com', newSchool);
+    expect(newInsOfInt.getSchool()).toEqual(newSchool);
   });
 });
 
